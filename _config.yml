@@ -29,9 +29,9 @@ custom_file_path:
   #postBodyEnd: source/_data/post-body-end.swig
   #footer: source/_data/footer.swig
   #bodyEnd: source/_data/body-end.swig
-  #variable: source/_data/variables.styl
+  variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
-  #style: source/_data/styles.styl
+  # style: source/_data/styles.styl
 
 
 # ---------------------------------------------------------------
@@ -40,8 +40,8 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
+  small: /images/favicon-16x16-wall.png
+  medium: /images/favicon-32x32-wall.png
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
@@ -52,7 +52,7 @@ language_switcher: false
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  #since: 2015
+  since: 2021-12
 
   # Icon between year and copyright info.
   icon:
@@ -67,8 +67,8 @@ footer:
   copyright:
 
   # Powered by Hexo & NexT
-  powered: true
-
+  powered: false
+  
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
     enable: false
@@ -98,12 +98,12 @@ creative_commons:
 
 # Schemes
 scheme: Muse
-#scheme: Mist
+# scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+# scheme: Gemini
 
 # Dark Mode
-darkmode: false
+darkmode: true
 
 
 # ---------------------------------------------------------------
@@ -117,18 +117,19 @@ darkmode: false
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  #about: /about/ || fa fa-user
-  #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
+  categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
   archives: /archives/ || fa fa-archive
+  links: /links/ || fa fa-link
+  about: /about/ || fa fa-user
   #schedule: /schedule/ || fa fa-calendar
-  #sitemap: /sitemap.xml || fa fa-sitemap
+  #sitemap: /baidusitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 
 # ---------------------------------------------------------------
@@ -163,9 +164,9 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /images/avatar2.jpg
   # If true, the avatar will be dispalyed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar will be rotated with the cursor.
   rotated: false
 
@@ -177,8 +178,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || fab fa-github
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  GitHub: https://github.com/thysrael || fab fa-github
+  E-Mail: mailto:thysrael@163.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -208,11 +209,11 @@ links:
 toc:
   enable: true
   # Automatically add list number to toc.
-  number: true
+  number: false
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
-  expand_all: false
+  expand_all: true
   # Maximum heading depth of generated toc.
   max_depth: 6
 
@@ -357,11 +358,11 @@ codeblock:
   highlight_theme: normal
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result.
     show_result: false
     # Available values: default | flat | mac
-    style:
+    style: flat
 
 back2top:
   enable: true
@@ -408,10 +409,10 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
-  host:
+  host: https://fonts.loli.net
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -421,19 +422,20 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Lato
+    # family: Lato
+    family: Noto Serif SC
     size:
 
   # Font settings for site title (.site-title).
   title:
     external: true
-    family:
+    family: Ma Shan Zheng
     size:
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
     external: true
-    family:
+    family: Ma Shan Zheng
     size:
 
   # Font settings for posts (.post-body).
@@ -444,7 +446,7 @@ font:
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: JetBrains Mono
 
 
 # ---------------------------------------------------------------
@@ -475,10 +477,10 @@ yandex_site_verification:
 
 # Baidu Webmaster tools verification.
 # See: https://ziyuan.baidu.com/site
-baidu_site_verification:
+baidu_site_verification: code-jsxllPgZAX
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: false
+baidu_push: true
 
 
 # ---------------------------------------------------------------
@@ -500,7 +502,7 @@ math:
 
   # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
   mathjax:
-    enable: false
+    enable: true
     # See: https://mhchem.github.io/MathJax-mhchem/
     mhchem: false
 
@@ -711,7 +713,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true
   total_visitors_icon: fa fa-user
   total_views: true
@@ -739,7 +741,7 @@ algolia_search:
 # Local Search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto
@@ -844,7 +846,7 @@ motion:
 # Dependencies: https://github.com/theme-next/theme-next-pace
 # For more information: https://github.com/HubSpot/pace
 pace:
-  enable: false
+  enable: true
   # Themes list:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
@@ -995,3 +997,71 @@ vendors:
 css: css
 js: js
 images: images
+
+friendslinks:
+  - nickname: hyggge
+    avatar: https://hyggge.github.io/medias/avatar.jpg
+    site: https://hyggge.github.io/
+    info: 温柔惬意小哥哥，居然不是单身！
+
+  - nickname: banana889
+    avatar: https://banana889.github.io/images/avatar.png
+    site: https://banana889.github.io/
+    info: 这只人说它喜欢数学
+
+  - nickname: Dovahkiin
+    avatar: https://the-tarnished.github.io/medias/avatar.jpg
+    site: https://the-tarnished.github.io/
+    info: 北航最棒的男人，名不虚传
+
+  - nickname: saltyfishyjk
+    avatar: https://saltyfishyjk.github.io/img/EMT.png
+    site: https://saltyfishyjk.github.io/
+    info: 这个人一点都不爱摸鱼，不过确实很爱汉堡
+
+  - nickname: musel
+    avatar: https://mmmusel.github.io/avatar/photo.jpg
+    site: https://mmmusel.github.io/
+    info: 这个人就是汉堡
+
+  - nickname: 重结晶
+    avatar: https://cjj826.github.io/img/bing.jpg
+    site: https://cjj826.github.io/
+    info: 极恶杰哥，六系永动机，千刀狼王
+
+  - nickname: ghy
+    avatar: https://raw.githubusercontent.com/Guo-HY/picture_git/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220414211309.jpg
+    site: https://guo-hy.github.io/
+    info: 这个人除了脱单什么都会
+
+  - nickname: Zhang-kg
+    avatar: https://zhang-kg.github.io/2023%E5%A4%B4%E5%83%8F.jpg
+    site: https://zhang-kg.github.io/
+    info: 高山安可仰，徒此揖清芬
+
+  - nickname: Master Tan
+    avatar: https://master-tan.github.io/2021/11/07/hello-world/2.jpg
+    site: https://master-tan.github.io/
+    info: 谭老师遇见了六系最好的姑娘
+
+  - nickname: roife
+    avatar: https://roife.github.io/img/avatar-roife-ny.jpg
+    site: https://roife.github.io/
+    info: 偶像领路人
+
+  - nickname: Coekjan
+    avatar: https://coekjan.github.io/img/about-ycj.jpg
+    site: https://coekjan.github.io/
+    info: 偶像领路人，括号对齐友军
+
+  - nickname: Gwok Hiujin
+    avatar: https://gwokhiujin.github.io/images/tx.jpg
+    site: https://gwokhiujin.github.io/
+    info: 她活成了我的理想
+
+  - nickname: chlience
+    avatar: https://avatars.githubusercontent.com/u/22586392?v=4
+    site: https://chlience.cn/
+    info: 他头没了(\\doge)
+
+
