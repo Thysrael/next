@@ -120,7 +120,9 @@ menu:
   categories: /categories/ || fa fa-th
   tags: /tags/ || fa fa-tags
   archives: /archives/ || fa fa-archive
-  links: /links/ || fa fa-link
+  Resource: /resource/ || fa fa-book
+  Links: /links/ || fa fa-link
+  Roam: /Roam-Site/ || fa fa-sitemap
   about: /about/ || fa fa-user
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /baidusitemap.xml || fa fa-sitemap
@@ -160,6 +162,13 @@ sidebar:
   offset: 12
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
+
+# 侧边栏 rss
+sidebar_rss:
+  text: RSS
+  icon: fa fa-rss
+  color: burlywood
+  link: atom.xml
 
 # Sidebar Avatar
 avatar:
