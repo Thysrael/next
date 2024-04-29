@@ -68,7 +68,7 @@ footer:
 
   # Powered by Hexo & NexT
   powered: false
-  
+
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
     enable: false
@@ -173,7 +173,7 @@ sidebar_rss:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: /images/avatar2.jpg
+  url: /images/avatar2.png
   # If true, the avatar will be dispalyed in circle.
   rounded: true
   # If true, the avatar will be rotated with the cursor.
